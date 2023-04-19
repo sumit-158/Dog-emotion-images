@@ -37,7 +37,7 @@ model = tf.keras.models.Sequential([
     #third_layer 
     tf.keras.layers.Flatten(),
     tf.keras.layers.Dense(100,activation="relu"),
-    tf.keras.layers.Dense(4,activation="softmax")
+    tf.keras.layers.Dense(5,activation="softmax")
 ])
 print("model processing done!")
 loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
